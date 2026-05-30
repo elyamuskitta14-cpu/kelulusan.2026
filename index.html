@@ -49,10 +49,8 @@
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  <script src="/_sdk/telemetry_sdk.js"></script></head>
  <body class="h-full overflow-auto bg-white">
-  <div id="app" class="h-full w-full min-h-full bg-white">
-   <!-- Page 1: Sambutan -->
-   <div id="page-sambutan" class="min-h-full w-full flex flex-col items-center justify-center px-4 py-12 relative overflow-hidden bg-white">
-    <!-- Light orbs animation -->
+  <div id="app" class="h-full w-full min-h-full bg-white"><!-- Page 1: Sambutan -->
+   <div id="page-sambutan" class="min-h-full w-full flex flex-col items-center justify-center px-3 sm:px-4 md:px-6 py-8 sm:py-10 md:py-12 lg:py-16 relative overflow-hidden bg-white"><!-- Light orbs animation -->
     <div class="light-orb light-1"></div>
     <div class="light-orb light-2"></div>
     <div class="light-orb light-3"></div><!-- Floating boxes background animation -->
@@ -60,25 +58,22 @@
     <div class="floating-box box-2"></div>
     <div class="floating-box box-3"></div>
     <div class="floating-box box-4"></div>
-    <div class="max-w-lg w-full relative z-10">
-     <div class="bg-gradient-to-br from-blue-400/40 via-emerald-400/30 to-amber-300/30 backdrop-blur-xl border-2 border-blue-300/60 rounded-3xl p-8 md:p-10 shadow-2xl" style="box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 30px rgba(59, 130, 246, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.2); transform: perspective(1200px) rotateX(2deg) rotateY(-1deg);">
-      <!-- Judul utama -->
-      <div class="text-center mb-10">
-       <h1 id="el-title" class="font-display text-2xl md:text-3xl text-white font-bold drop-shadow-lg mb-3" style="text-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);">Pengumuman Kelulusan</h1>
-       <p class="text-blue-50 text-sm md:text-base font-bold leading-relaxed" style="text-shadow: 0 3px 10px rgba(59, 130, 246, 0.4);">SD KRISTEN KALAM KUDUS AMBON<br>
+    <div class="w-full max-w-sm sm:max-w-md md:max-w-lg relative z-10">
+     <div class="bg-gradient-to-br from-blue-400/40 via-emerald-400/30 to-amber-300/30 backdrop-blur-xl border-2 border-blue-300/60 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl" style="box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 30px rgba(59, 130, 246, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.2); transform: perspective(1200px) rotateX(2deg) rotateY(-1deg);"><!-- Judul utama -->
+      <div class="text-center mb-6 sm:mb-8 md:mb-10">
+       <h1 id="el-title" class="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white font-bold drop-shadow-lg mb-2 sm:mb-3" style="text-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);">Pengumuman Kelulusan</h1>
+       <p class="text-blue-50 text-xs sm:text-sm md:text-base lg:text-lg font-bold leading-relaxed" style="text-shadow: 0 3px 10px rgba(59, 130, 246, 0.4);">SD KRISTEN KALAM KUDUS AMBON<br>
          Tahun Ajaran 2025/2026</p>
       </div><!-- Deskripsi -->
-      <div class="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-md rounded-2xl p-6 mb-10 border border-white/20">
-       <p class="text-white text-center text-base leading-relaxed font-semibold" style="text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);">Klik tombol di bawah untuk melihat status kelulusan Anda dengan cepat dan mudah.</p>
+      <div class="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 mb-6 sm:mb-8 md:mb-10 border border-white/20">
+       <p class="text-white text-center text-sm sm:text-base md:text-lg leading-relaxed font-semibold" style="text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);">Klik tombol di bawah untuk melihat status kelulusan Anda dengan cepat dan mudah.</p>
       </div><!-- Tombol CTA -->
-      <div class="text-center">
-       <button onclick="showCekKelulusan()" class="w-full px-6 py-4 bg-gradient-to-r from-blue-500 to-cyan-600 text-white font-bold rounded-2xl shadow-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-3 card-hover" style="box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4), 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.2);"> <i data-lucide="search" style="width:20px;height:20px;"></i> <span>Cek Kelulusan Anda</span> </button>
+      <div class="text-center"><button onclick="showCekKelulusan()" class="w-full px-4 sm:px-6 py-3 sm:py-4 md:py-5 bg-gradient-to-r from-blue-500 to-cyan-600 text-white font-bold text-sm sm:text-base md:text-lg rounded-xl sm:rounded-2xl shadow-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-2 sm:gap-3 card-hover" style="box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4), 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.2);"> <i data-lucide="search" style="width:18px;height:18px;" class="sm:w-5 sm:h-5"></i> <span>Cek Kelulusan Anda</span> </button>
       </div>
      </div>
     </div>
    </div><!-- Page 2: Cek Kelulusan -->
-   <div id="page-cek" class="min-h-full w-full flex flex-col items-center justify-center px-4 py-12 hidden relative overflow-hidden bg-white">
-    <!-- Light orbs animation -->
+   <div id="page-cek" class="min-h-full w-full flex flex-col items-center justify-center px-4 py-12 hidden relative overflow-hidden bg-white"><!-- Light orbs animation -->
     <div class="light-orb light-1"></div>
     <div class="light-orb light-2"></div>
     <div class="light-orb light-3"></div><!-- Floating boxes background animation -->
@@ -86,7 +81,8 @@
     <div class="floating-box box-2"></div>
     <div class="floating-box box-3"></div>
     <div class="floating-box box-4"></div>
-    <div class="max-w-lg w-full"><button onclick="showSambutan()" class="text-blue-300 hover:text-blue-100 mb-8 flex items-center gap-2 text-sm font-semibold transition-colors"> <i data-lucide="arrow-left" style="width:18px;height:18px;"></i> Kembali ke Beranda </button>
+    <div class="max-w-lg w-full">
+     <button onclick="showSambutan()" class="text-blue-300 hover:text-blue-100 mb-8 flex items-center gap-2 text-sm font-semibold transition-colors"> <i data-lucide="arrow-left" style="width:18px;height:18px;"></i> Kembali ke Beranda </button>
      <div class="bg-gradient-to-br from-blue-400/40 via-emerald-400/30 to-amber-300/30 backdrop-blur-xl border-2 border-blue-300/60 rounded-3xl p-8 md:p-10 shadow-2xl" style="box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15), 0 15px 30px rgba(59, 130, 246, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.2); transform: perspective(1200px) rotateX(2deg) rotateY(-1deg);">
       <div class="text-center mb-10">
        <h2 class="font-display text-5xl text-blue-50 font-bold drop-shadow-lg mb-4" style="text-shadow: 0 8px 24px rgba(59, 130, 246, 0.5);">Cek Kelulusan</h2>
@@ -94,7 +90,8 @@
          status kelulusan dengan segera</p>
       </div>
       <form onsubmit="cekKelulusan(event)">
-       <div class="relative mb-6"><i data-lucide="search" style="width:20px;height:20px;" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-blue-500"></i> <input id="input-nisn" type="text" placeholder="Masukkan NISN Anda..." class="w-full pl-12 pr-4 py-3 rounded-xl bg-gradient-to-r from-white/20 to-white/10 border-2 border-blue-300/50 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white/25 transition-all text-lg font-semibold tracking-wider" style="box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);" autocomplete="off">
+       <div class="relative mb-6">
+        <i data-lucide="search" style="width:20px;height:20px;" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-blue-500"></i> <input id="input-nisn" type="text" placeholder="Masukkan NISN Anda..." class="w-full pl-12 pr-4 py-3 rounded-xl bg-gradient-to-r from-white/20 to-white/10 border-2 border-blue-300/50 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white/25 transition-all text-lg font-semibold tracking-wider" style="box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);" autocomplete="off">
        </div><button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300 card-hover" style="box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);"> <span class="flex items-center justify-center gap-2"> <i data-lucide="search" style="width:18px;height:18px;"></i> Cek Sekarang </span> </button>
       </form>
       <div id="result" class="mt-8"></div>
@@ -234,30 +231,30 @@
 
       createConfetti();
       res.innerHTML = `
-        <div class="bg-gradient-to-br from-blue-500/30 to-cyan-500/20 border-2 border-blue-400/50 rounded-3xl p-12 animate-fade-up shadow-2xl" style="box-shadow: 0 30px 60px rgba(59, 130, 246, 0.3), 0 15px 30px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.15); transform: perspective(1200px) rotateX(1deg);">
-          <div class="text-center mb-14">
-            <h2 class="font-display text-7xl font-bold text-white drop-shadow-lg mb-2" style="text-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);">Selamat!</h2>
+        <div class="bg-gradient-to-br from-blue-500/30 to-cyan-500/20 border-2 border-blue-400/50 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 animate-fade-up shadow-2xl" style="box-shadow: 0 30px 60px rgba(59, 130, 246, 0.3), 0 15px 30px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.15); transform: perspective(1200px) rotateX(1deg);">
+          <div class="text-center mb-8 sm:mb-10 md:mb-14">
+            <h2 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-lg mb-2" style="text-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);">Selamat!</h2>
           </div>
           
-          <div class="space-y-8 mb-14">
-            <div class="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-2xl p-10 border-2 border-blue-300/40 shadow-lg" style="box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.1); transform: perspective(1000px) rotateX(1deg);">
-              <p class="text-blue-300 text-sm font-bold uppercase tracking-widest mb-6 opacity-95">Nama Siswa</p>
-              <p class="text-white font-bold text-xl md:text-2xl leading-snug break-words word-break" style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">${found.nama}</p>
+          <div class="space-y-6 sm:space-y-7 md:space-y-8 mb-8 sm:mb-10 md:mb-14">
+            <div class="bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md rounded-lg sm:rounded-2xl p-6 sm:p-8 md:p-10 border-2 border-blue-300/40 shadow-lg" style="box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.1); transform: perspective(1000px) rotateX(1deg);">
+              <p class="text-blue-300 text-xs sm:text-sm md:text-base font-bold uppercase tracking-widest mb-4 sm:mb-5 md:mb-6 opacity-95">Nama Siswa</p>
+              <p class="text-white font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug break-words word-break" style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">${found.nama}</p>
             </div>
           </div>
           
-          <div class="flex justify-center mb-12">
-            <div class="px-16 py-8 rounded-3xl bg-gradient-to-r from-blue-500 to-cyan-600 border-2 border-cyan-300/50 shadow-2xl inline-block" style="box-shadow: 0 20px 50px rgba(59, 130, 246, 0.4), 0 10px 25px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.2); transform: perspective(1200px) rotateX(-2deg) scaleY(1.05);">
-              <div class="flex items-center justify-center gap-4">
-                <div class="w-12 h-12 rounded-full bg-white/30 flex items-center justify-center">
-                  <i data-lucide="check-circle" style="width:28px;height:28px;" class="text-white"></i>
+          <div class="flex justify-center mb-8 sm:mb-10 md:mb-12">
+            <div class="px-8 sm:px-12 md:px-16 py-5 sm:py-6 md:py-8 rounded-2xl sm:rounded-3xl bg-gradient-to-r from-blue-500 to-cyan-600 border-2 border-cyan-300/50 shadow-2xl inline-block" style="box-shadow: 0 20px 50px rgba(59, 130, 246, 0.4), 0 10px 25px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.2); transform: perspective(1200px) rotateX(-2deg) scaleY(1.05);">
+              <div class="flex items-center justify-center gap-3 sm:gap-4">
+                <div class="w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-white/30 flex items-center justify-center">
+                  <i data-lucide="check-circle" style="width:24px;height:24px;" class="sm:w-7 sm:h-7 text-white"></i>
                 </div>
-                <p class="text-white font-bold text-4xl" style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);">LULUS</p>
+                <p class="text-white font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl" style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);">LULUS</p>
               </div>
             </div>
           </div>
           
-          <p class="text-center text-gray-700 text-xl leading-relaxed font-semibold" style="text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);">
+          <p class="text-center text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed font-semibold" style="text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);">
             Terima kasih telah menempuh pendidikan dengan baik.<br>Semoga tetap bersemangat dan sukses melanjutkan ke jenjang berikutnya! 🙏
           </p>
         </div>`;
@@ -305,5 +302,5 @@
 
     lucide.createIcons();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a039b5a11d819ce2',t:'MTc4MDEwMTg1Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a03a20d78ebc5fda',t:'MTc4MDEwNjI0OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
